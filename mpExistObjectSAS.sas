@@ -3,6 +3,13 @@
 /*========================================================================================================*/
 /* Type of supported objects : TABLE,COLUMN,VIEW,CATALOG,FILEREF,LIBREF,MACROV,MACROF,FILE,FOLDER         */
 /*========================================================================================================*/
+/* OPTIONS :                                                                                              */
+/* - verbose                                                                                              */ 
+/*   = NOINFO (default): Just return result without printing any information if no errors                 */
+/*   = NOWARN          : Return result and print only informations (no warnings) if no errors             */
+/*   = INFO            : Return all informations and warnings                                             */
+/*   Note that if something is wrong, informations about the issue will be mandatorily printed            */
+/*========================================================================================================*/
 /* CALL EXAMPLES :                                                                                        */
 /*                                                                                                        */
 /* [TABLE]   %put %mpExistObjectSAS(objectType=TABLE, objectName=sashelp.class);                          */
